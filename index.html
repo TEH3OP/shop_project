@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup_menu.css">
+    <link rel="stylesheet" href="style_products.css">
+    <link rel="stylesheet" href="content_device_orders_frames.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="demo_shop/logo_here.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Home </a>
+                            </li>
+                            <li class="element_clicked">
+                                <a href="#">Products<span class="material-icons">
+                                        keyboard_arrow_down
+                                    </span>
+                                    <!-- <i class="fa fa-angle-down"  style="font-size: 14px; font-weight: bold" aria-hidden="true"></i> -->
+                                </a>
+                                <div class="popup_menu">
+                                    <ul>
+                                        <li><a href="#">Product 1</a></li>
+                                        <li><a href="#">Product 2</a></li>
+                                        <li><a href="#">Product 3</a></li>
+                                        <li><a href="#">Product 4</a></li>
+                                        <li><a href="#">Product 5</a></li>
+                                        <li><a href="#">Product 6</a></li>
+                                        <li><a href="#">Product 7</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Payment</a>
+                            </li>
+                            <li>
+                                <a href="#">Shipping</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="menu">
+                        <div class="frame-search">
+                            <form method="GET">
+                                <div class="menu">
+                                    <input type="submit" class="button_search" value="">
+                                    <!-- <img src="demo_shop/search_white.png"> -->
+                                    <input class="input" placeholder="search" name="searchContent">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="frame-orders">
+                            <button class="background_order_button">
+                                <img src="demo_shop/orders_blue.png" alt="Orders">
+                            </button>
+                            <div class="circle">4
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="frame-slider">
+            <pre>&lt              SLIDE 3              &gt</pre>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Левая боковая панель продуктов -->
+                    <div class="frame-device-type">
+                        <!-- Список продуктов -->
+                        <div>
+                            <div class="device-type-title">DEVICE TYPE</div>
+                            <ul class="list-device-type">
+                                <li>
+                                    <input type="checkbox" id="Laptop">
+                                    <label for="Laptop">Laptop</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Tablet">
+                                    <label for="Tablet">Tablet</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Список цветов -->
+                        <div>
+                            <div class="device-type-title">COLOR</div>
+                            <ul class="list-device-type">
+                                <li>
+                                    <input type="checkbox" id="Black">
+                                    <label for="Black">Black</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Red">
+                                    <label for="Red">Red</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Green">
+                                    <label for="Green">Green</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Blue">
+                                    <label for="Blue">Blue</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Orange">
+                                    <label for="Orange">Orange</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Список размеров памяти -->
+                        <div>
+                            <div class="device-type-title">RAM</div>
+                            <ul class="list-device-type">
+                                <li>
+                                    <input type="checkbox" id="1GB">
+                                    <label for="1GB">1GB</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="2GB">
+                                    <label for="2GB">2GB</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="4GB">
+                                    <label for="4GB">4GB</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="6GB">
+                                    <label for="6GB">6GB</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="8GB">
+                                    <label for="8GB">8GB</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="link-show-more-options" href="#">Show more options &#x2026</a>
+                        <button class="more-details device-title-text">SUBMIT</button>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="frame-selected-product-page clear-both">
+                        <a href="#">Home page</a>
+                        <div>
+                            <pre> &gt </pre>
+                        </div>
+                        <a href="#">Products</a>
+                        <div>
+                            <pre> &gt </pre>
+                        </div>
+                        <a href="#">Laptops and Tablets</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-66">
+                            <div class="title-selected-page">
+                                Laptops and Tablets
+                            </div>
+                        </div>
+                        <div class="col-md-33">
+                            <select name="select" class="sort_select">
+                                <!--Supplement an id here instead of using 'name'-->
+                                <option value="sort_by_name">sort by name</option>
+                                <option value="sort_by_date" selected>sort by date</option>
+                                <option value="sort_by_popularity">sort by popularity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Первая строка устройств -->
+                    <div class="row">
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/monitor.png" alt="monitors">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #1 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $599<sup> 25</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/tv_tuner.png" alt="TV">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #2 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $1250<sup> 99</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/smart_watch.png" alt="smart watchs">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #3 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $399<sup> 50</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Вторая строка устройств -->
+                    <div class="row">
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/notebook.png" alt="Laptop">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #1 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $599<sup> 25</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/mp3_player.png" alt="iPod">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #2 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $1250<sup> 99</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/iphone.png" alt="iphone">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #3 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $399<sup> 50</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Третья строка устройств -->
+                    <div class="row">
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/tablet.png" alt="iPad">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #1 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $599<sup> 25</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/tv_tuner2.png" alt="TV2">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #2 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $1250<sup> 99</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-33">
+                            <div class="frame-device-info">
+                                <figure class="frame-device-image">
+                                    <img src="demo_shop/smart_watch2.png" alt="Smart watches 2">
+                                    <div class="image-aim"></div>
+                                    <div class="image-favorite"></div>
+                                </figure>
+                                <div class="device-description">
+                                    <div class="device-name">
+                                        #3 Device Name
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">TYPE:</span> Laptop
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">SCREEN SIZE:</span> 7 inches
+                                    </div>
+                                    <div>
+                                        <span class="device-title-text">RAM:</span> 1GB
+                                    </div>
+                                    <div class="price">
+                                        $399<sup> 50</sup>
+                                    </div>
+                                    <button class="more-details device-title-text" href="#">MORE DETAILS</button>
+                                    <button class="add-to-card device-title-text" href="#">ADD TO CARD
+                                        <div class="image-add-to-brasket"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+    <footer class="footer">footer</footer>
+</body>
+
+</html>
