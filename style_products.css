@@ -26,10 +26,13 @@
     margin-bottom: 20px;
 }
 
+.list-device-type>li>label{
+    cursor: pointer;
+}
+
 .list-device-type>li>label::before{
     float: left;
     content: "";
-    cursor: pointer;
     display: block;
     width: 10px;
     height: 10px;
