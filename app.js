@@ -2,10 +2,10 @@
 console.log("test");
 
 let productsCountElement = document.getElementById("products-count");
-console.log(productsCountElement);
+// console.log(productsCountElement);
 
 let addToCardButtons = document.querySelectorAll(".add-to-card");
-console.log(addToCardButtons);
+// console.log(addToCardButtons);
 
 for (let i = 0; i < addToCardButtons.length; i++) {
     addToCardButtons[i].addEventListener("click", function () {
@@ -30,22 +30,54 @@ moreDetailsButton.forEach(item => {
     item.addEventListener("click", function () {
         openModal();
     })
-})
+});
 
-function openModal(){
+
+function openModal() {
     modal.classList.add("show");
     modal.classList.remove("hide");
 }
 
-function closeModal(){
+function closeModal() {
     modal.classList.add("hide");
     modal.classList.remove("show")
 }
 
 closeButton.addEventListener("click", closeModal);
 
-modal.addEventListener("click", function(e){
-    if (e.target === modal){
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
         closeModal();
     }
 })
+
+
+// Задаем действие для иконки "добавить в избранное"
+let addToFavorite = document.querySelectorAll(".image-favorite");
+// console.log(addToFavorite);
+addToFavorite.forEach(favoriteIcon => {
+    favoriteIcon.addEventListener("click", setCheckedAddToFavorite);
+});
+
+// Задаем действие для иконки "добавить с прицелом"
+let addAim = document.querySelectorAll(".image-aim");
+// console.log(addToFavorite);
+addAim.forEach(favoriteIcon => {
+    favoriteIcon.addEventListener("click", setCheckedAim);
+});
+
+function setCheckedAddToFavorite() {
+    setChecked(this, "image-favorite-on");
+}
+
+function setCheckedAim(){
+    setChecked(this, "image-aim-on");
+}
+
+function setChecked(target, className){
+    if (target.classList.contains(className)) {
+        target.classList.remove(className);
+    } else {
+        target.classList.add(className);
+    }
+}
