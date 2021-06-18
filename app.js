@@ -154,3 +154,7 @@ for (let i = 0; i < decrementButtons.length; i ++){
 
 // let test = hi.bind(ivan, "Bind");
 // test();
+
+    $('.frame-slider').slick({
+        dots: true
+    });
